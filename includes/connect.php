@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pw = "root";
+$pw = "";
 $db = "db_myskills";
 
 $conn = mysqli_connect($host, $user, $pw, $db);
@@ -29,4 +29,3 @@ if (isset($_GET["id"])) {
 
     echo json_encode($rows[0]);
 }
-?> 

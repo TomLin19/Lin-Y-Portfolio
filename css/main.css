@@ -9,12 +9,17 @@ pre, code, form, p,
 fieldset, legend, figure{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
     color: #353535;
-    font: 16px/1.5 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+    font: 16px/1.5 'Lilita One', cursive;
+   
+    
+    
 }
+
 
 @media screen and (max-width: 500px){
     html[resize] body{
@@ -88,6 +93,7 @@ body::-webkit-scrollbar-track:hover{
 .wrap{
     margin-left:auto;
     margin-right: auto;
+    margin-bottom: auto;
     max-width: 1200px;
     padding: 0 1.25em;
     box-sizing: content-box;
@@ -177,14 +183,14 @@ kbd{
     color: #fff;
     font-size: 90%;
     background: #333;
-    font-family: 'Consolas', 'Courier New', monospace, "微软雅黑";
+    
 }
 
 audio{
     vertical-align: middle;
 }
 
-img, svg, video{
+img, svg {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
@@ -270,7 +276,8 @@ article h4, article h5, article h6{
 /* - Pre code */
 pre, code{
     font-size: 1em;
-    font-family: 'Consolas', 'Courier New', monospace, "微软雅黑";
+    font-family: 'Lilita One', cursive;
+    
 }
 
 pre{
@@ -652,9 +659,11 @@ iframe{
 }
 
 .row.scrollable{
+    padding: 50px;
     overflow: auto;
-    margin-left: 0;
+    margin-left: -100px;
     margin-right: 0;
+    margin-bottom: 80px;
     flex-wrap: nowrap;
 }
 
@@ -1201,7 +1210,7 @@ iframe{
 @keyframes fade-in-right{ from{ opacity: 0; transform: translateX(-20px) } to{ opacity: 1; transform: translateX(0) } }
 @-webkit-keyframes fade-in-right{ from{ opacity: 0; transform: translateX(-20px) } to{ opacity: 1; transform: translateX(0) } }
 
-/* - 淡入缩放 */
+/* - Fade in zoom*/
 .bk-animate.fade-small-large{
     animation-name: fade-small-large; -webkit-animation-name: fade-small-large;
 }
@@ -1404,27 +1413,56 @@ img[bk-image=active]{
 }
 
 /* fetch database  */
-.popover { 
+ .popover { 
     display: none;
     position: absolute;
-    top: 18%;
-    left: 110%;
+    top: 85%;
+    left: 5%;
     background-color: orange;
-    width: 350px;
-    z-index: 1;
+    width: 300px;
     border-radius: 8px;
     padding: 4px;
   }
+ 
   
-  .show-popover { display: block; }
+ .show-popover { display: block; }
   
-  .see-more { 
+ .see-more { 
     display: block; 
-    padding: 12px 18px; 
+    margin-left: 5%;
     border-radius: 8px; 
     color: white; 
     background-color: salmon; 
-    margin-top: 8px
-  }
+    
+  } 
+/* Button setting */
+#button1{
+        background:url(../images/PSAI.png) no-repeat center;
+        background-size: 90%;
+        width:90px;
+        height:90px;
+        border:0px;
+        cursor:pointer;
+        
+        }
+
+#button2{
+            background:url(../images/PRAE.png) no-repeat center;
+            background-size:90%;
+            width:90px;
+            height:90px;
+            border:0px;
+            
+            cursor:pointer;
+            }
+#button3{
+                background:url(../images/3DC4D.png) no-repeat center;
+                background-size: 90%;
+                width:90px;
+                height:90px;
+                border:0px;
+                cursor:pointer;
+                }
+
 
 

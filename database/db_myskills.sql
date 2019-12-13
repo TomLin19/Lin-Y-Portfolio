@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- 主机： 127.0.0.1:3306
--- 生成日期： 2019-12-08 14:01:01
--- 服务器版本： 5.7.26
--- PHP 版本： 7.2.18
+-- Host: 127.0.0.1:3306
+-- Generation Time: Dec 13, 2019 at 12:12 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,31 +19,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `db_myskills`
+-- Database: `db_myskills`
 --
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `myskills`
+-- Table structure for table `myskills`
 --
 
 DROP TABLE IF EXISTS `myskills`;
 CREATE TABLE IF NOT EXISTS `myskills` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(30) NOT NULL,
-  `description` varchar(100) NOT NULL,
+  `title` varchar(10) NOT NULL,
+  `description` varchar(50) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `myskills`
+-- Dumping data for table `myskills`
 --
 
 INSERT INTO `myskills` (`ID`, `title`, `description`) VALUES
-(1, 'AI/PS', 'Be good at using AI and PS to make posters and icons'),
-(2, 'C4D/3DMAX', 'Be good at using C4D and 3DMAX to make model of product'),
-(3, 'AE/PR', 'Be good at using AE and PR to edit the video.');
+(1, 'AI/PS', 'Icon design and poster design'),
+(2, 'AE/PR', 'Postproduction of the Film and Televison'),
+(3, '3D/C4D', 'Production design and 3D Animation');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

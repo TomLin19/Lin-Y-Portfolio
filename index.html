@@ -8,13 +8,13 @@
     <link rel="icon" href="images/192.png" sizes="192x192"/>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="css/main2.css" rel="stylesheet" type="text/css"/>
-    
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
 </head>
 <body>
 <aside class="sidebar">
     <div class="Tom">
-        <img src="images/Tom_Lin400.jpg" title="Tom_Lin"/>
+        <a href="../YuFeng_Lin_portfolio_3039/index.html"><img src="images/Tom_Lin400.jpg" title="Tom_Lin"/></a>
     </div>
     <nav class="nav">
         <a href="#info">Personal Information</a>
@@ -22,10 +22,11 @@
         <a href="#works">My Works</a>
         <a href="#story">My Experience</a>
         <a href="#team">My Team</a>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
     </nav>
 </aside>
 <main>
+    <!-- Personal Information -->
     <section id="info">
         <div class="wrap">
             <h2 class="title">Personal Information</h2>
@@ -49,47 +50,63 @@
                         modeling and video production.
                      </p>
                 </div>
+                <div class="col-1-4">
+                           
+                <video id="Final Video" width="480px" height="380px"> 
+                <source src="./video/1058_Fianl video Short.mp4" type="video/mp4"> 
+                </video> 
+                
+                <div id="buttonbar"> 
+                <button id="restart" onclick="restart();">[]</button>  
+                <button id="rew" onclick="skip(-10)">&lt;&lt;</button> 
+                <button id="play" onclick="vidplay()">&gt;</button> 
+                <button id="fastFwd" onclick="skip(10)">&gt;&gt;</button> 
+                </div>    
+                           
+                </div>
             </div>
         </div>
     </section>
+    <!-- My skills  -->
     <section id="skills">
         <div class="wrap">
             <h2 class="title">My Skill</h2>
             <div class="row scrollable">
                 <div class="col-s-6 col-m-4 center-fixed">
                     <div class="skills-icon">
-                        <i class="fa fa-html5"><buttonn class="see-more" data-target="1"></buttonn></i>
+                        <i class="fa fa-html5">
+                            <button class="see-more " data-target="1" id="button1"></button>
+                        </i>
                     </div>
-                    <!-- <div class="skills-title">
-                        <h3>AI/PS</h3>
-                        <p>Be good at using AI and PS to make posters and icons</p>
-                    </div> -->
+                    <div class="skills-title"></div>
                 </div>
                 <div class="col-s-6 col-m-4 center-fixed">
                     <div class="skills-icon">
-                        <i class="fa fa-css3"><buttonn class="see-more" data-target="2"></buttonn></i>
+                        <i class="fa fa-css3">
+                            <button class="see-more" data-target="2" id="button2"></button>
+                        </i>
                     </div>
-                    <!-- <div class="skills-title">
-                        <h3>C4D/3DMAX</h3>
-                        <p>Be good at using C4D and 3DMAX to make model of product</p>
-                    </div> -->
+                    <div class="skills-title">
+                        
+                    </div>
                 </div>
                 <div class="col-s-6 col-m-4 center-fixed">
                     <div class="skills-icon">
-                        <i class="fa fa-code"><buttonn class="see-more" data-target="3"></buttonn></i>
+                        <i class="fa fa-code">
+                            <button class="see-more" data-target="3" id="button3"></button>
+                        </i>
                     </div>
-                    <!-- <div class="skills-title">
-                        <h3>AE/PR</h3>
-                        <p>Be good at using AE and PR to edit the video.</p>
-                    </div> -->
+                    <div class="skills-title">
+                    </div>
                 </div>
             </div>
         </div>
         <article class="popover">
-            <h class="title">Software</h4>
+            <h2 class="title"></h2>
             <p class="description"></p>
         </article>
     </section>
+    <!-- My work  -->
     <section id="works">
         <div class="wrap">
             <h2 class="title">My Works</h2>
@@ -147,6 +164,7 @@
             </div>
         </div>
     </section>
+    <!-- My Story  -->
     <section id="story">
         <div class="wrap">
             <h2 class="title">My Experience</h2>
@@ -174,6 +192,7 @@
             </div>
         </div>
     </section>
+    <!-- My Team  -->
     <section class="content-d" id="team">
         <div class="wrap">
             <h2 class="title">My Team</h2>
@@ -193,8 +212,34 @@
             </div>
         </div>
     </section>
+    <!-- Contact Me -->
+    <section id="contact">
+        <div class="wrap">
+            <h2 class="title">Contact Me</h2>
+            <!-- <div class="row"> -->
+                    <form method="POST" action="./database/send.php">
+                            <div><label >Your Name:</label></div>
+                            <div><input type="text" name="myName" placeholder="Your name.."></div>
+                            <div><label class="Emailbox">Your Email:</label></div>
+                            <div><input type="text" name="myEmail" placeholder="Email box.."></div>
+                            
+                            <div><label class="Messagebox">Message:</label></div>
+                            <div><textarea name="myMessage" placeholder="Write something.."></textarea></div>
+                            <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                    <option value="china">China</option>
+                                  </select>
+                            <div>
+                                <input type="submit" value="Send"/>
+                            </div>
+                        </form>
+               <!-- </div> -->
+        </div>
+    </section>
     <footer>
-        <p>© 2019 By <a href="http://raijin-group.com/" title="Raijin Auto Group" target="_blank">YuFeng_Lin</a>.</p>
+        <p>© 2019 By YuFeng_Lin</a>.</p>
     </footer>
 </main>
 

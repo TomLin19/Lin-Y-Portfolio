@@ -103,10 +103,11 @@ main section{
     }
 }
 
-#info{ background: url(img/bg-1.png) fixed; }
+#info{ background: url(../images/bg-1.png) fixed; }
 #skills{ background: #f8bd24; }
-#works{ background: url(img/bg-2.png) fixed; }
-#team{ background: url(img/bg-3.png) fixed; }
+#works{ background: url(../images/bg-2.png) fixed; }
+#team{ background: url(../images/bg-3.png) fixed; }
+#contact{background: whitesmoke; }
 
 .title{
     margin-bottom: 1em;
@@ -114,7 +115,8 @@ main section{
 .title:before{
     float: left;
     margin-right: .5em;
-    font-family: "FontAwesome";
+    font-family: 'manaspc' sans-serif;
+    
 }
 
 /* - My skills */
@@ -191,3 +193,50 @@ footer{
 footer a{
     color: inherit;
 }
+
+/* 4 - contact box  */
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #585858;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

@@ -118,11 +118,6 @@ function bk_image(selector) {
     });
 }
 
-// Footer copyright
-if (window.console && window.console.log) {
-    console.log("\n %c Kico Style %c http://raijin-group.com/ \n\n", "color: #fff; background: #3498db; padding: 5px 0;", "background: #efefef; padding: 5px 0; text-decoration: none;");
-}
-
 // fetch database php 
 (() => {
 
@@ -133,7 +128,8 @@ if (window.console && window.console.log) {
 
     function fetchData() {
         let targetElement = this,
-            url = `../includes/connect.php?id=${this.dataset.target}`;
+        
+            url = `./includes/connect.php?id=${this.dataset.target}`;
 
         fetch(url)
             .then(res => res.json())
@@ -155,3 +151,26 @@ if (window.console && window.console.log) {
 
     seeMoreButtons.forEach(el => el.addEventListener("click", fetchData));
 })();
+
+// Video  play control
+function vidplay() { 
+    var video = document.getElementById("Final Video"); 
+    var button = document.getElementById("play"); 
+    if (video.paused) { 
+       video.play(); 
+       button.textContent = ">"; 
+    } else { 
+       video.pause(); 
+       button.textContent = "||"; 
+    } 
+ } 
+
+ function restart() { 
+     var video = document.getElementById("Final Video"); 
+     video.currentTime = 0; 
+ } 
+
+ function skip(value) { 
+     var video = document.getElementById("Final Video"); 
+     video.currentTime += value; 
+ }    
