@@ -1,2 +1,2 @@
 # Lin-Y-Portfolio
-images/final Logo.png
+！[image text]:images/final Logo.png
